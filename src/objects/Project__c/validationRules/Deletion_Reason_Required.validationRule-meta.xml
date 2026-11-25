@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deletion_Reason_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Is_Deleted__c = TRUE, ISBLANK(Deletion_Reason__c))</errorConditionFormula>
+    <errorDisplayField>Deletion_Reason__c</errorDisplayField>
+    <errorMessage>Provide a reason before marking this project as deleted.</errorMessage>
+</ValidationRule>
